@@ -1,10 +1,10 @@
 pipeline "ls_container_pipeline" {
-  step "container" "aws_s3_ls" {
+  step "container" "ubuntu" {
      image      = "ubuntu"
      cmd        = ["ls"]
   }  
 
-  output "buckets" {
-    value = step.container.aws_s3_ls.stdout
+  output "ls" {
+    value = step.container.ubuntu.stdout
   }
 }

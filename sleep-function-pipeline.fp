@@ -6,7 +6,7 @@ pipeline "sleep_function_pipeline" {
   }
 
   step "function" "sleep" {
-      source    = "./example4/src"
+      source    = "./src/sleep-function-pipeline"
       event     = param.event
       runtime = "nodejs:20"
   }

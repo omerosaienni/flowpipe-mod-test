@@ -1,11 +1,11 @@
-pipeline "example3" {
+pipeline "python-function-pipeline" {
   step "function" "python_function_pipeline" {
-    source  = "./example3/src"
+    source  = "./src/python-function-pipeline"
     runtime = "python:3.10"
     handler = "hello-world.print_hello_world"
   }
 
   output "testing" {
-    value = step.function.my_func_defaults
+    value = step.function.python_function_pipeline
   }
 }
