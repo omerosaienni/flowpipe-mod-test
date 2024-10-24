@@ -1,3 +1,3 @@
-mod "local" {
+mod "omero" {
   title = "flowpipe-tester"
 }
