@@ -1,3 +1,3 @@
 mod "omero" {
-  title = "flowpipe-tester"
+  title = "omero-flowpipe-tester"
 }
